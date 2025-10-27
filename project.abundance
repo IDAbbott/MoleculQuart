@@ -1,0 +1,15 @@
+{
+    "atomType": "Molecule",
+    "name": "MoleculQuart",
+    "x": 0,
+    "y": 0,
+    "uniqueID": "c5411ffe-9137-430e-907a-a245bb34e0e5",
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [],
+    "allConnectors": [],
+    "unitsKey": "MM",
+    "fileTypeVersion": 1,
+    "compiledBom": {},
+    "filetypeVersion": 1
+}
