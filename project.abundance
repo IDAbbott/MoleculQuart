@@ -160,6 +160,11 @@
       "ap2ID": "id-26"
     },
     {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-16",
+      "ap2ID": "id-1"
+    },
+    {
       "ap2Name": "geometry1",
       "ap1ID": "id-20",
       "ap2ID": "id-16"
