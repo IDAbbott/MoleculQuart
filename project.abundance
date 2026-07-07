@@ -135,203 +135,44 @@
       ]
     },
     {
-      "atomType": "GitHubMolecule",
-      "x": 0.22126696832579185,
-      "y": 0.7747368421052632,
-      "uniqueID": "id-60",
-      "name": "Sphere",
+      "atomType": "Code",
+      "x": 0.1897565071368598,
+      "y": 0.5294117647058824,
+      "uniqueID": "id-123",
       "ioValues": [
         {
-          "name": "Radius",
-          "ioValue": 500
+          "name": "width",
+          "ioValue": 40
+        },
+        {
+          "name": "depth",
+          "ioValue": 30
+        },
+        {
+          "name": "thickness",
+          "ioValue": 5
+        },
+        {
+          "name": "holeRadius",
+          "ioValue": 6
+        },
+        {
+          "name": "color",
+          "ioValue": "#5B9BD5",
+          "currentEquation": "#5B9BD5"
+        },
+        {
+          "name": "addFillet",
+          "ioValue": true
+        },
+        {
+          "name": "extra",
+          "ioValue": "__GEOMETRY_INPUT__"
         }
       ],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-56",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Code",
-          "x": 0.4642857142857143,
-          "y": 0.41225626740947074,
-          "uniqueID": "id-57",
-          "ioValues": [
-            {
-              "name": "radius",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "interpreterVersion": 0,
-          "code": "//Inputs:[radius];\n\n//let shape = replicad.makeSphere(radius)\n\nconst newPlane = new replicad.Plane().pivot(0, 'Y');\n\n return { geometry: [replicad.makeSphere(radius)], tags: [],\n      color: '#A3CE5B',\n      bom:[],\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
-          "uniqueID": "id-58",
-          "name": "Radius",
-          "type": "number"
-        },
-        {
-          "atomType": "Constant",
-          "x": 0.24709302325581398,
-          "y": 0.8575851393188855,
-          "uniqueID": "id-59",
-          "value": 10
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-57",
-          "ap2ID": "id-56"
-        },
-        {
-          "ap2Name": "radius",
-          "ap1ID": "id-58",
-          "ap2ID": "id-57"
-        }
-      ],
-      "parentRepo": {
-        "lastFoundGit": "2026-07-05T18:23:39.268Z",
-        "privateRepo": false,
-        "repoName": "Sphere",
-        "dateCreated": "2024-12-16T03:57:03Z",
-        "likes": 0,
-        "readMe": "https://raw.githubusercontent.com/BarbourSmith/Sphere/master/README.md?sanitize=true",
-        "yyyy": 2025,
-        "topMoleculeID": 1734321423025,
-        "githubMoleculesUsed": [],
-        "html_url": "https://github.com/BarbourSmith/Sphere",
-        "topics": [],
-        "parentRepo": "alzatin/Sphere",
-        "forks": 0,
-        "dateModified": "739548",
-        "ranking": 0.9,
-        "searchField": "sphere barboursmith creates a sphere ",
-        "owner": "BarbourSmith",
-        "description": "Creates a sphere",
-        "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Sphere/master/project.abundance?sanitize=true",
-        "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Sphere/master/project.svg?sanitize=true",
-        "isLocal": false
-      },
-      "unitsKey": "Inches",
-      "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1783294370907
-    },
-    {
-      "atomType": "Import",
-      "x": 0.08914027149321267,
-      "y": 0.5052631578947369,
-      "uniqueID": "id-70",
-      "fileName": null,
-      "name": "Import",
-      "type": null,
-      "SVGwidth": 10
-    },
-    {
-      "atomType": "GitHubMolecule",
-      "x": 0.6113122171945701,
-      "y": 0.7305263157894737,
-      "uniqueID": "id-77",
-      "name": "Sphere",
-      "ioValues": [
-        {
-          "name": "Radius",
-          "ioValue": 500
-        }
-      ],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-73",
-          "ioValues": [
-            {
-              "name": "number or geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ]
-        },
-        {
-          "atomType": "Code",
-          "x": 0.45804540967423496,
-          "y": 0.5090909090909091,
-          "uniqueID": "id-74",
-          "ioValues": [
-            {
-              "name": "radius",
-              "ioValue": "__GEOMETRY_INPUT__"
-            }
-          ],
-          "interpreterVersion": 0,
-          "code": "//Inputs:[radius];\n\n//let shape = replicad.makeSphere(radius)\n\nconst newPlane = new replicad.Plane().pivot(0, 'Y');\n\n return { geometry: [replicad.makeSphere(radius)], tags: [],\n      color: '#A3CE5B',\n      bom:[],\n      plane: newPlane}\n\n\n    /**\n    To Use the Code Atom, enter your inputs to the input list a.e Inputs:[shape, height]\n    If your input is connected to another atom with a replicad geometry you can access its geometry by looking up its ID in your library. a.e library[Input1].geometry[0] \n    Use any replicad available methods to modify your geometry. Learn more about all of the available methods at \n    https://replicad.xyz/docs/introapp/UserGuide.html \n    Return a replicad object that includes geometry, color, tags and plane. \n\n\n    Example Code Atom:\n\n      Inputs:[shape, x];\n\n      let finalShape = library[shape].geometry[0].clone.translate[x,0,0]\n\n      return {geometry: finalShape, color: library[shape].color, plane: library[shape].plane, tags: library[shape].tags }\n\n      - See more examples at _______ \n\n\n    */\n"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
-          "uniqueID": "id-75",
-          "name": "Radius",
-          "type": "number"
-        },
-        {
-          "atomType": "Constant",
-          "x": 0.24709302325581398,
-          "y": 0.8575851393188855,
-          "uniqueID": "id-76",
-          "value": 10
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-74",
-          "ap2ID": "id-73"
-        },
-        {
-          "ap2Name": "radius",
-          "ap1ID": "id-75",
-          "ap2ID": "id-74"
-        }
-      ],
-      "parentRepo": {
-        "lastFoundGit": "2026-07-05T18:23:39.268Z",
-        "repoName": "Sphere",
-        "dateCreated": "2024-11-13T19:37:04Z",
-        "likes": 0,
-        "readMe": "https://raw.githubusercontent.com/alzatin/Sphere/master/README.md?sanitize=true",
-        "yyyy": 2025,
-        "topMoleculeID": 1731526624936,
-        "githubMoleculesUsed": [],
-        "html_url": "https://github.com/BarbourSmith/Sphere",
-        "topics": [],
-        "parentRepo": "BarbourSmith/Sphere",
-        "forks": 1,
-        "dateModified": "03/05/2025",
-        "ranking": 2,
-        "searchField": "sphere alzatin",
-        "owner": "alzatin",
-        "description": "Creates a sphere from the input radius",
-        "contentURL": "https://raw.githubusercontent.com/alzatin/Sphere/master/project.abundance?sanitize=true",
-        "svgURL": "https://raw.githubusercontent.com/alzatin/Sphere/master/project.svg?sanitize=true",
-        "isLocal": false
-      },
-      "unitsKey": "Inches",
-      "fileTypeVersion": 1,
-      "lastReloadedFromGithubAt": 1783294498318
+      "interpreterVersion": 1,
+      "code": "\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(\n  width: number = 40,        \n  depth: number = 30,       \n  thickness: number = 5,    \n  holeRadius: number = 6,   \n  color: string = \"#5B9BD5\", \n  addFillet: boolean = true, \n  extra?: Assembly           \n) {\n  // ── Step 1: Create the base solid ────────────────────────────────────────\n  // makeBaseBox(width, depth, height) places a box with one corner at the\n  // origin.  Translate it so the hole will be centred at (0, 0).\n  let plate = replicad\n    .makeBaseBox(width, depth, thickness)\n    .translate(-width / 2, -depth / 2, 0);\n\n  // ── Step 2: Cut a through-hole in the centre ──────────────────────────────\n  // Extrude a circle slightly taller than the plate so the cut goes all the\n  // way through.  Start 1 mm below the bottom face to avoid coplanar issues.\n  const holeCutter = replicad\n    .drawCircle(holeRadius)\n    .sketchOnPlane()\n    .extrude(thickness + 2)\n    .translate(0, 0, -1);\n\n  plate = plate.cut(holeCutter);\n\n  // ── Step 3: Optional fillet on the top-face edges ────────────────────────\n  // inPlane(\"XY\", thickness) selects only the edges that lie in the\n  // horizontal plane at z = thickness (i.e. the top face of the plate).\n  if (addFillet) {\n    plate = plate.fillet(1.5, (e) => e.inPlane(\"XY\", thickness));\n  }\n\n  // ── Step 4: Wrap in an Assembly to set display properties ─────────────────\n  const plateAssembly = new Assembly({\n    geometry: plate,\n    color: color,\n    tags: [\"plate\", \"mounting-plate\"],\n    bom: [`Mounting plate ${width}×${depth}×${thickness} mm`],\n  });\n\n  // ── Step 5: Combine with any upstream geometry ────────────────────────────\n  // Returning an array lets each piece stay independent for the BOM and\n  // cut-layout atoms.  If nothing is connected, `extra` is undefined.\n  const results: Assembly[] = [plateAssembly];\n  if (extra) results.push(extra);\n  return results;\n}\n",
+      "compiledCode": "\"use strict\";\n/**\n * =========================================================================\n *  ABUNDANCE CODE ATOM — Quick Reference\n * =========================================================================\n *\n *  HOW INPUTS WORK\n *  ---------------\n *  Every parameter of run() becomes an input port on this atom.\n *  Four types are supported:\n *\n *    number   -> numeric input / slider\n *    string   -> text input  (great for hex color codes, labels, etc.)\n *    boolean  -> true/false toggle\n *    Assembly -> geometry -- wire this to the output of another atom\n *\n *  Give a parameter a default value ( = x ) to make it optional.\n *  Mark it with ? (name?: Assembly) to make it optional with no default.\n *  Parameters without a default must be connected before the atom runs.\n *\n *  RETURN VALUE\n *  ------------\n *  Return an Assembly, an Assembly[], or a primitive (number/string/boolean).\n *  Returning an Assembly[] lets downstream atoms (BOM, cut layout...)\n *  see each piece independently.\n *\n *  GEOMETRY API  (replicad is available as a global)\n *  -------------------------------------------------\n *  Create 2-D sketches\n *    replicad.drawCircle(radius)\n *    replicad.drawRectangle(width, height)\n *    replicad.drawRoundedRectangle(width, height, cornerRadius)\n *\n *  Turn a 2-D sketch into a 3-D solid\n *    sketch.sketchOnPlane().extrude(distance)\n *    sketch.sketchOnPlane().revolve()          // rotate 360 deg around Z\n *\n *  Create 3-D primitives directly\n *    replicad.makeBaseBox(width, depth, height)\n *    replicad.makeSphere(radius)\n *    replicad.makeCylinder(radius, height)\n *\n *  Boolean operations\n *    solidA.fuse(solidB)                       // union\n *    solidA.cut(solidB)                        // difference (cut a hole)\n *    solidA.intersect(solidB)                  // intersection\n *\n *  Post-processing\n *    solid.fillet(radius)                      // round ALL edges\n *    solid.fillet(r, e => e.inPlane(\"XY\", z))  // round only top-face edges\n *    solid.chamfer(distance)                   // bevel ALL edges\n *    solid.translate(x, y, z)                  // move the solid\n *    solid.rotate(angle, [0, 0, 1])            // rotate around Z axis\n *\n *  ASSEMBLY CLASS\n *  --------------\n *  Wrap any replicad solid in an Assembly to attach display metadata:\n *    new Assembly({ geometry, color, tags, bom })\n *      geometry -> replicad solid / drawing returned by the API above\n *      color    -> hex string shown in the 3-D viewport  (\"#A3CE5B\")\n *      tags     -> string[] used for filtering in cut layout / BOM\n *      bom      -> string[] lines added to the Bill of Materials panel\n *\n *  AI PROMPT TIP\n *  -------------\n *  Copy the code in this editor into ChatGPT / Claude and say something like:\n *    \"Modify this Abundance Code Atom to create a gear with 12 teeth\"\n *    \"Change this to make a hexagonal nut instead of a round plate\"\n *  The comments above give the AI all the context it needs to produce\n *  valid, working Abundance TypeScript code.\n * =========================================================================\n */\n/**\n * A rectangular mounting plate with a circular hole in the centre.\n * All parameters have defaults so the atom produces geometry immediately\n * after creation — no connections required to get started.\n */\nfunction run(width = 40, depth = 30, thickness = 5, holeRadius = 6, color = \"#5B9BD5\", addFillet = true, extra) {\n    // ── Step 1: Create the base solid ────────────────────────────────────────\n    // makeBaseBox(width, depth, height) places a box with one corner at the\n    // origin.  Translate it so the hole will be centred at (0, 0).\n    let plate = replicad\n        .makeBaseBox(width, depth, thickness)\n        .translate(-width / 2, -depth / 2, 0);\n    // ── Step 2: Cut a through-hole in the centre ──────────────────────────────\n    // Extrude a circle slightly taller than the plate so the cut goes all the\n    // way through.  Start 1 mm below the bottom face to avoid coplanar issues.\n    const holeCutter = replicad\n        .drawCircle(holeRadius)\n        .sketchOnPlane()\n        .extrude(thickness + 2)\n        .translate(0, 0, -1);\n    plate = plate.cut(holeCutter);\n    // ── Step 3: Optional fillet on the top-face edges ────────────────────────\n    // inPlane(\"XY\", thickness) selects only the edges that lie in the\n    // horizontal plane at z = thickness (i.e. the top face of the plate).\n    if (addFillet) {\n        plate = plate.fillet(1.5, (e) => e.inPlane(\"XY\", thickness));\n    }\n    // ── Step 4: Wrap in an Assembly to set display properties ─────────────────\n    const plateAssembly = new Assembly({\n        geometry: plate,\n        color: color,\n        tags: [\"plate\", \"mounting-plate\"],\n        bom: [`Mounting plate ${width}×${depth}×${thickness} mm`],\n    });\n    // ── Step 5: Combine with any upstream geometry ────────────────────────────\n    // Returning an array lets each piece stay independent for the BOM and\n    // cut-layout atoms.  If nothing is connected, `extra` is undefined.\n    const results = [plateAssembly];\n    if (extra)\n        results.push(extra);\n    return results;\n}\n"
     }
   ],
   "allConnectors": [
