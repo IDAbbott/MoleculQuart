@@ -2,7 +2,7 @@
 
 # MoleculQuart
 
-![](/project.svg)
+![](/project.png)
 
 
 
